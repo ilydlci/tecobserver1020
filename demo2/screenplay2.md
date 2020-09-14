@@ -31,3 +31,4 @@
 
 # TODO
 * Figure out what to show at line 30
+* Additional step: introduce AWS copilot -> add Dockerfile, `copilot init` -> Add manifest.yml,  `copilot env init` -> `copilot svc deploy --env production
