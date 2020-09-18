@@ -1,4 +1,4 @@
-# Screenplay for Demo 1
+# Screenplay for Demo 2
 
 * Build app in [Spring Initializr](https://start.spring.io/)
   * Gradle Project
@@ -28,7 +28,15 @@
 ```
 * Upload new version to Beanstalk, watch health deteriorate
 * Add database via configuration, watch health get back to ok
-
-# TODO
-* Figure out what to show at line 30
-* Additional step: introduce AWS copilot -> add Dockerfile, `copilot init` -> Add manifest.yml,  `copilot env init` -> `copilot svc deploy --env production
+* In the meanwhile, introduce AWS Copilot
+* Copy files (no `mkdir` necessary!)
+```
+~/TecObserver/tecobserver1020/demo2$ cp -r demo_with_db demo_with_copilot
+~/TecObserver/tecobserver1020/demo2$ cp -ri copilot_step1/* demo_with_copilot
+~/TecObserver/tecobserver1020/demo2$ rm src/main/resources/application.properties
+~/TecObserver/tecobserver1020/demo2$ cd demo_with_copilot
+~/TecObserver/tecobserver1020/demo2/demo_with_copilot$ ./gradlew clean build -x test
+```
+* Init copilot: `copilot init`, follow the instructions & do not use LB
+* Allow port 8080 in security group
+* Ping public IP (visible under cluster > service > task > network)
