@@ -9,4 +9,15 @@
 * Show all the various tabs
   * Events
   * Resources --> Connect to EC2 (remark how that was not possible for Beanstalk)
-  
+* Delete stack, move on to Terraform, `cd /demo3/example1/`
+* Show `example1.tf` file, explain structure
+* `terraform init`
+* `terraform apply` (already contains planning step since 0.11)
+* Highlight that we can't connect :/
+* `terraform destroy`
+* `cd ../example2/`, show `example2.tf`, explain provisioners
+* `terraform apply`
+* Show that connection is not working, enable inbound port 22 and explain how it could be done (specify already existing SG, define one as a resource, use a bastion host, ...)
+
+# TODO
+* Next step: Lambdas via Terraform
