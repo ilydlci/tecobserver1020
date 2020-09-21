@@ -18,6 +18,7 @@
 * `cd ../example2/`, show `example2.tf`, explain provisioners
 * `terraform apply`
 * Show that connection is not working, enable inbound port 22 and explain how it could be done (specify already existing SG, define one as a resource, use a bastion host, ...)
-
-# TODO
-* Next step: Lambdas via Terraform
+* `cd ../example3/`, show `lambda.tf`, explain
+* `terraform apply`
+* `aws lambda invoke --region=us-east-1 --function-name=ServerlessExample output.txt`
+* `cd ../example4/`, *TODO*
