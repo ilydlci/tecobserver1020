@@ -14,9 +14,9 @@
 * Run & ping: `curl localhost:8080/actuator/health; echo`
 * Create application
   * Upload JAR in Elastic Beanstalk
-  * Set up load balancing: default port 8080
-  * Set up load balancing: health check `/actuator/health`
-* Allow port 8080 in security group
+    * `$ cp ~/tecobserver1020/demo2/demo/build/libs/demo-0.0.1-SNAPSHOT.jar /mnt/c/Users/cito luca/Desktop/`
+  * Change configuration of load balancing: default port 8080
+  * Change configuration of load balancing: health check `/actuator/health`
 * Query via curl
 * Add database configuration from `db_config` folder
 ```
