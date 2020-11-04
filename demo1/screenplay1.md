@@ -22,7 +22,7 @@ aws rds create-db-instance --db-instance-identifier tecobserver-rds-cli-test-1 -
 psql -h <see above> -p 5432 -U tecobserver -d mydb
 ```
   * Adjust security group in order to connect to port 5432
-  * Retry connect --> success
+  * Retry connect --> success, show databases via `\l`
   * Create another database, but this time specifying the specifying security group above
 ```
 aws rds create-db-instance --db-instance-identifier tecobserver-rds-cli-test-2 --db-instance-class db.t3.micro --engine postgres --db-name mydb --master-username tecobserver --master-user-password tecobserver --allocated-storage 20 --vpc-security-group-ids <see above> | tee create-db-instance-2.out
