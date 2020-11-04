@@ -28,7 +28,3 @@ psql -h <see above> -p 5432 -U tecobserver -d mydb
 aws rds create-db-instance --db-instance-identifier tecobserver-rds-cli-test-2 --db-instance-class db.t3.micro --engine postgres --db-name mydb --master-username tecobserver --master-user-password tecobserver --allocated-storage 20 --vpc-security-group-ids <see above> | tee create-db-instance-2.out
 ```
   * Connect successfully on the first try
-
-# TODO
-
-* Put command(s) into shell script(s)
