@@ -20,6 +20,7 @@
 * Query via curl
 * Add database configuration from `db_config` folder
 ```
+~/TecObserver/tecobserver1020/demo2$ mkdir demo_with_db
 ~/TecObserver/tecobserver1020/demo2$ cp -r demo demo_with_db
 ~/TecObserver/tecobserver1020/demo2$ cp -ri db_config/* demo_with_db
 ~/TecObserver/tecobserver1020/demo2$ cd demo_with_db/
