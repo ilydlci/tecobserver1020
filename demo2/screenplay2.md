@@ -15,6 +15,7 @@
 * Create application
   * Upload JAR in Elastic Beanstalk
     * `$ cp ~/tecobserver1020/demo2/demo/build/libs/demo-0.0.1-SNAPSHOT.jar /mnt/c/Users/cito luca/Desktop/`
+    * `aws s3 cp build/libs/demo-0.0.1-SNAPSHOT.jar s3://tecobserver-demo2-target-jar/demo-0.0.1-SNAPSHOT.jar`
   * Change configuration of load balancing: default port 8080
   * Change configuration of load balancing: health check `/actuator/health`
 * Query via curl
