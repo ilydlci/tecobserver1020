@@ -8,7 +8,7 @@
   * Add dependencies
     * Spring web
     * Spring Boot Actuator
-* Download zip file, move to Ubuntu drive
+* Download zip file, move to EC2: `.\pscp.exe -v -P 22 -i tecobserver_key2.ppk demo.zip ubuntu@ec2-18-196-101-68.eu-central-1.compute.amazonaws.com:/home/ubuntu/`
 * Unzip: `unzip demo.zip`
 * Build JAR: `./gradlew clean build`
 * Run & ping: `curl localhost:8080/actuator/health; echo`
