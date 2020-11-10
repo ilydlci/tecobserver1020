@@ -20,6 +20,8 @@
 * Show that connection is not working, enable inbound port 22 and explain how it could be done (specify already existing SG, define one as a resource, use a bastion host, ...)
 * `terraform destroy`
 * `cd ../example3/`, show `lambda.tf`, explain
+* `zip minimal-node.zip main.js`
+* `aws s3 cp minimal-node.zip s3://tecobserver-terraform-demo-ex3/v1/minimal-node.zip`
 * `terraform apply`
 * `aws lambda invoke --region=eu-central-1 --function-name=ServerlessExample output.txt`
 * `terraform destroy`
